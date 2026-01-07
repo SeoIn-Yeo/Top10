@@ -57,9 +57,9 @@
 
 ## 설명. 
 
-일반적으로, [전송 계층]((https://en.wikipedia.org/wiki/Transport_layer)([OSI 4계층](https://en.wikipedia.org/wiki/OSI_model)) 에서의 모든 데이터는 암호화되어 전송해야 한다. 과거에는 CPU 성능과 프라이빗 키/인증서 관리가 장벽이었다. 현재는 암호 연산 가속을 위한 CPU 전용 명령어(예: [AES support](https://en.wikipedia.org/wiki/AES_instruction_set)) 가 도입되었고, [LetsEncrypt.org](https://letsencrypt.org/) 같은 서비스와 대형 클라우드 공급업체가 자사 플랫폼에 긴밀히 통합된 인증서 관리 서비스를 제공하면서 프라이빗 키와 인증서 관리도 간소화되었다.
+일반적으로, [전송 계층](https://en.wikipedia.org/wiki/Transport_layer)([OSI 4계층](https://en.wikipedia.org/wiki/OSI_model)) 에서의 모든 데이터는 암호화되어 전송해야 한다. 과거에는 CPU 성능과 프라이빗 키/인증서 관리가 장벽이었다. 현재는 암호 연산 가속을 위한 CPU 전용 명령어(예: [AES support](https://en.wikipedia.org/wiki/AES_instruction_set)) 가 도입되었고, [LetsEncrypt.org](https://letsencrypt.org/) 같은 서비스와 대형 클라우드 공급업체가 자사 플랫폼에 긴밀히 통합된 인증서 관리 서비스를 제공하면서 프라이빗 키와 인증서 관리도 간소화되었다.
 
-전송 계층 보안 외에도 어떤 데이터가 저장 시 암호화가 필요한지, 그리고 전송 중([애플리케이션 계층](https://en.wikipedia.org/wiki/Application_layer), OSI 7계층)에 추가적인 암호화가 필요한지 결정하는 것이 중요하다. 예를 들어 패스워드, 신용카드 번호, 건강 기록, 개인 정보, 비즈니스 기밀은 추가 보호가 필요하다. 특히 해당 데이터가 개인정보 보호법(예: EU의 GDPR)이나 규정(예: PCI-DSS]의 적용을 받는 경우 더욱 중요하다.
+전송 계층 보안 외에도 어떤 데이터가 저장 시 암호화가 필요한지, 그리고 전송 중([애플리케이션 계층](https://en.wikipedia.org/wiki/Application_layer), OSI 7계층)에 추가적인 암호화가 필요한지 결정하는 것이 중요하다. 예를 들어 패스워드, 신용카드 번호, 건강 기록, 개인 정보, 비즈니스 기밀은 추가 보호가 필요하다. 특히 해당 데이터가 개인정보 보호법(예: EU의 GDPR)이나 규정(예: PCI-DSS)의 적용을 받는 경우 더욱 중요하다.
 
 이러한 모든 데이터에 대해 다음을 확인해야 한다.
 
