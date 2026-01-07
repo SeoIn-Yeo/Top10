@@ -12,7 +12,7 @@ OWASP Top 10의 8번째 버전에 오신 것을 환영합니다!
 
 
 
-* [A01:2025 - 충분한 접근 제어](A01_2025-Broken_Access_Control.md)
+* [A01:2025 - 불충분한 접근 제어](A01_2025-Broken_Access_Control.md)
 * [A02:2025 - 보안 설정 오류](A02_2025-Security_Misconfiguration.md)
 * [A03:2025 - 소프트웨어 공급망 실패](A03_2025-Software_Supply_Chain_Failures.md)
 * [A04:2025 - 암호 실패](A04_2025-Cryptographic_Failures.md)
