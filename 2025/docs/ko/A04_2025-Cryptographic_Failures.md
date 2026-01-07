@@ -1,5 +1,6 @@
 # A04:2025 암호 실패 ![icon](../assets/TOP_10_Icons_Final_Crypto_Failures.png){: style="height:80px;width:80px" align="right"}
 
+> 옮긴이: 본 문서에서는 "cryptographic"을 "암호"로 번역한다. 이는 종종 "암호화"로 번역되나, 해당 용어는 암호화뿐 아니라 복호화, 해시, 전자서명 등 암호 기술 전반을 포괄하므로 본 문서의 번역어를 "암호"로 통일한다.
 
 
 ## 배경. 
