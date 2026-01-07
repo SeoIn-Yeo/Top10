@@ -19,9 +19,9 @@ OWASP Top 10은 이름 그대로 가장 중요한 10가지 위험으로만 선�
   <tr>
    <td>해당되는 CWE 개수
    </td>
-   <td>최대 취약점 발생률
+   <td>최대 발생률
    </td>
-   <td>평균 취약점 발생률
+   <td>평균 발생률
    </td>
    <td>최대 테스트 커버리지
    </td>
@@ -163,9 +163,9 @@ Java, C#, JavaScript/TypeScript(Node.js), Go, 그리고 "안전한" Rust와 같�
   <tr>
    <td>해당되는 CWE 개수
    </td>
-   <td>최대 취약점 발생률
+   <td>최대 발생률
    </td>
-   <td>평균 취약점 발생률
+   <td>평균 발생률
    </td>
    <td>최대 테스트 커버리지
    </td>
