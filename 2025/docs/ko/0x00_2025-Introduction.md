@@ -62,7 +62,7 @@ MITRE가 선정한 가장 위험한 소프트웨어 취약점 25개와 유사하
 
 CVSSv2에서는 Exploit과 (Technical) Impact 모두 최대 10.0까지 가능하였으나, 공식에 따라 Exploit은 60%, Impact는 40%로 조정되었다. CVSSv3에서는 이론상 최댓값이 Exploit 6.0, Impact 4.0으로 제한되었다. 가중치를 고려한 결과, Impact 점수는 CVSSv3에서 평균적으로 약 1.5점 상승하였고, Exploitability는 평균적으로 약 0.5점 하락하였다.
 
-OWASP Dependency Check에서 추출한 미국 국가 취약점 데이터베이스(National Vulnerability Database, NVD) 데이터에는 CWE에 매핑된 CVE 기록이 약 175,000건(2021년 125,000건에서 증가) 존재한다. 또한 CVE에 매핑된 고유 CWE는 643개(2021년 241개에서 증가)이다. 추출된 약 220,000건의 CVE 중 160,000건은 CVSS v2 점수를, 156,000건은 CVSS v3 점수를, 6,000건은 CVSS v4 점수를 보유하고 있다. 다수의 CVE가 복수의 점수를 보유하고 있어 합계가 220,000건을 초과한다.
+OWASP Dependency Check에서 추출한 미국 정부가 운영하는 취약점 데이터베이스(National Vulnerability Database) 데이터에는 CWE에 매핑된 CVE 기록이 약 175,000건(2021년 125,000건에서 증가) 존재한다. 또한 CVE에 매핑된 고유 CWE는 643개(2021년 241개에서 증가)이다. 추출된 약 220,000건의 CVE 중 160,000건은 CVSS v2 점수를, 156,000건은 CVSS v3 점수를, 6,000건은 CVSS v4 점수를 보유하고 있다. 다수의 CVE가 복수의 점수를 보유하고 있어 합계가 220,000건을 초과한다.
 
 Top 10 2025에서는 다음과 같은 방식으로 평균 Exploit 및 Impact 점수를 산정하였다. CVSS 점수가 있는 모든 CVE를 CWE별로 그룹화하고, CVSSv3 점수를 보유한 비율과 CVSSv2 점수를 보유한 나머지 비율에 따라 Exploit 및 Impact 점수에 가중치를 부여하여 전체 평균을 산출하였다. 이 평균값을 데이터셋의 CWE에 매핑하여 위험 산정 공식의 나머지 절반인 Exploit 및 (Technical) Impact 점수로 활용하였다.
 
