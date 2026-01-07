@@ -100,6 +100,9 @@ extra:
     - name: en - English
       link: ./en/
       lang: en
+    - name: ko - Korean
+      link: ./ko/
+      lang: ko
 #    - name: de - Deutsch
 #      link: ./de/
 #      lang: de
