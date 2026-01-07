@@ -4,7 +4,7 @@
 
 ## 배경. 
 
-암호 실패 카테고리는 이전 버전에서 2단계 하락해 4위가 되었다. 이 카테고리는 암호 부재, 불충분한 암호 강도, 암호키 유출 및 관련 오류에 중점을 둔다. 이 위험에서 가장 흔한 CWE 3개는 약한 의사 난수 생성기(PRNG) 사용과 관련이 있다: _CWE-327: 취약하거나 위험한 암호 알고리즘 사용_, _CWE-331: 불충분한 엔트로피_, _CWE-1241: 난수 생성기 내 예측 가능한 알고리즘 사용_, _CWE-338: 암호학적으로 약한 의사 난수 생성기(PRNG) 사용_.
+암호 실패 카테고리는 이전 버전에서 2단계 하락해 4위가 되었다. 이 카테고리는 암호 부재, 불충분한 암호 강도, 암호키 유출 및 관련 오류에 중점을 둔다. 이 위험에서 가장 흔한 CWE 3개는 약한 의사 난수 생성기(PRNG) 사용과 관련이 있다: *CWE-327: 취약하거나 위험한 암호 알고리즘 사용*, *CWE-331: 불충분한 엔트로피*, *CWE-1241: 난수 생성기 내 예측 가능한 알고리즘 사용*, *CWE-338: 암호학적으로 약한 의사 난수 생성기(PRNG) 사용*.
 
 
 ## 점수표.
@@ -22,9 +22,9 @@
    </td>
    <td>평균 테스트 커버리지
    </td>
-   <td>가중 평균 악용도
+   <td>평균 가중 악용도
    </td>
-   <td>가중 평균 영향도
+   <td>평균 가중 영향도
    </td>
    <td>총 발생 건수
    </td>
@@ -126,7 +126,7 @@
 * [NIST Releases First 3 Finalized Post-Quantum Encryption Standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards)
 
 
-## List of Mapped CWEs
+## 해당되는 CWE 목록.
 
 * [CWE-261 Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html)
 
