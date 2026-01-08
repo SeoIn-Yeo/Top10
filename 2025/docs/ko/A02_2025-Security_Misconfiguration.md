@@ -1,12 +1,12 @@
 # A02:2025 보안 설정 오류 ![icon](../assets/TOP_10_Icons_Final_Security_Misconfiguration.png){: style="height:80px;width:80px" align="right"}
 
 
-## 배경.
+## 배경
 
 지난 버전에서 3단계 상승해 2위로 올라왔으며, 테스트 된 모든 애플리케이션에서 잘못된 설정 중 한 가지 이상이 발견되었다. 이번 카테고리 내에서의 평균 발생률은 3%이며, 총 CWE는 1,375개이고 71만 9천 개가 넘는 취약점이 발견되었다. 최근 설정 가능한 소프트웨어 쪽으로 트렌드가 이동함에 따라 이번 카테고리 순위 변동은 크게 놀라울 만한 일이 아니다. 주목할 만한 CWE로는 *CWE-16: 설정* 그리고 *CWE-611: XML 외부 엔티티 참조의 부적절한 제한(XXE)*가 있다.
 
 
-## 점수표.
+## 점수표
 
 
 <table>
@@ -54,7 +54,7 @@
 
 
 
-## 설명.
+## 설명
 
 보안 설정 오류는 보안 관점에서 시스템, 애플리케이션, 클라우드 서비스 설정이 잘못되어 취약점이 발생하는 것을 말한다.
 
@@ -73,7 +73,7 @@
 일관되고 재사용 가능한 애플리케이션 보안 설정 하드닝 절차가 없다면 시스템은 더 높은 위험에 놓인다.
 
 
-## 대응 방안.
+## 대응 방안
 
 다음과 같은 항목들을 포함하여 보안성이 반영된 구성 절차를 수립한다.
 
@@ -88,7 +88,7 @@
 * 코드, 설정 파일, 파이프라인 내 정적인 키나 시크릿을 저장하는 대신 플랫폼에서 제공하는 아이덴티티 페더레이션, 단기 유효 자격 증명, 또는 역할 기반 접근 메커니즘을 사용한다.
 
 
-## 공격 시나리오 예시. 
+## 공격 시나리오 예시 
 
 **시나리오 1:** 운영 서버에서 테스트용 애플리케이션이 지워지지 않았다. 테스트용 애플리케이션은 공격자가 해당 서버를 공격할 수 있는 보안 취약점이 존재한다고 알려져 있으며, 그중 하나의 애플리케이션은 관리자용 콘솔이라 가정해 보겠다. 그리고 기본 계정은 변경되지 않았다. 이런 경우 공격자는 기본 계정으로 로그인한 뒤 시스템 장악이 가능하다.
 
@@ -98,7 +98,7 @@
 
 **시나리오 4:** 클라우드 서비스 제공자(Cloud service provider, CSP)는 인터넷에 자원을 공유하는 권한이 기본 설정이다. 이는 민감한 정보가 공개된 클라우드 스토리지 내 저장될 시 관계자 외 접근을 허용할 수 있다.
 
-## 참조.
+## 참조
 
 * [OWASP Testing Guide: Configuration Management](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/README)
 * [OWASP Testing Guide: Testing for Error Codes](https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling)
@@ -108,7 +108,7 @@
 * [Amazon S3 Bucket Discovery and Enumeration](https://blog.websecurify.com/2017/10/aws-s3-bucket-discovery.html)
 * ScienceDirect: Security Misconfiguration
 
-## 해당되는 CWE 목록.
+## 해당되는 CWE 목록
 
 * [CWE-5 J2EE Misconfiguration: Data Transmission Without Encryption](https://cwe.mitre.org/data/definitions/5.html)
 

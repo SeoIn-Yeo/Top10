@@ -1,11 +1,11 @@
 # A03:2025 소프트웨어 공급망 실패 ![icon](../assets/TOP_10_Icons_Final_Vulnerable_Outdated_Components.png){: style="height:80px;width:80px" align="right"}
 
 
-## 배경.
+## 배경
 
 소프트웨어 공급망 실패는 TOP 10 커뮤니티 조사에서 정확히 50%의 응답자가 1위로 선정하였다. 2013년 TOP 10에 "A9 - 사용 중인 컴포넌트 내 알려진 취약점" 으로 처음 등장한 이후, 해당 카테고리는 "알려진 취약점" 외에도 "모든 공급망 실패"를 포함하도록 범위가 확장되었다. 범위가 확대됨에도 불구하고, 공급망 실패는 여전히 식별이 어려우며, 관련 CWE와 매핑된 CVE가 11개에 불과하다. 그러나, 수집한 데이터를 테스트하고 보고한 결과에 따르면 이번 카테고리는 5.19%라는 가장 높은 평균 발생률을 보였고, 관련된 CWE로는 *CWE-477: 더 이상 사용되지 않는 기능 사용*, *CWE-1104: 관리되지 않은 외부 컴포넌트 사용*, *CWE-1329: 업데이트할 수 없는 컴포넌트에 대한 의존*, 그리고 *CWE-1395: 취약한 외부 컴포넌트 의존* 이 있다.
 
-## 점수표.
+## 점수표
 
 
 <table>
@@ -53,7 +53,7 @@
 
 
 
-## 설명.
+## 설명
 
 소프트웨어 공급망 실패는 소프트웨어를 개발, 배포, 업데이트하는 과정에서 발생하는 장애 또는 침해를 의미한다. 이는 주로 외부 코드, 도구, 시스템이 신뢰하는 의존성이 악의적으로 변조되거나 의존성에 존재하는 취약점이 원인이 된다.
 
@@ -71,7 +71,7 @@
 * 시스템의 모든 구성 요소에 대한 설정이 안전하지 않은 경우. (참고. [A02:2025-보안 설정 오류](https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/))
 * CI/CD 파이프라인의 보안이 빌드하고 배포하는 시스템보다 취약한 경우, 특히 파이프라인이 복잡할수록 취약하다.
 
-## 대응 방안.
+## 대응 방안
 
 패치 관리 프로세스 내 다음과 같은 사항이 포함되어야 한다.
 
@@ -111,7 +111,7 @@
 
 모든 조직은 해당 애플리케이션 또는 포트폴리오의 생명 주기 동안, 업데이트나 설정 변경 사항을 계속 감시하고 중요도를 판단해 우선순위를 정한 뒤 적시에 반영할 수 있는 상시적인 운영 계획을 갖춰야 한다.
 
-## 공격 시나리오 예시.
+## 공격 시나리오 예시
 
 **시나리오 1:** 신뢰하는 벤더가 악성코드에 감염되어, 업데이트하는 과정에서 내부 시스템까지 침해되는 경우. 가장 유명한 사례는 다음과 같다.
 
@@ -129,7 +129,7 @@
 * CVE-2021-44228("Log4Shell"): Apache Log4j의 제로데이 원격 코드 실행 취약점으로, 랜섬웨어, 암호화폐 채굴 등 다양한 공격 캠페인에 악용되었다.
 
 
-## 참조.
+## 참조
 
 * [OWASP Application Security Verification Standard: V15 Secure Coding and Architecture](https://owasp.org/www-project-application-security-verification-standard/)
 * [OWASP Cheat Sheet Series: Dependency Graph SBOM](https://cheatsheetseries.owasp.org/cheatsheets/Dependency_Graph_SBOM_Cheat_Sheet.html)
@@ -151,7 +151,7 @@
 * [PhantomRaven supply chain attack campaign](https://thehackernews.com/2025/10/phantomraven-malware-found-in-126-npm.html)
 
 
-## 해당되는 CWE.
+## 해당되는 CWE
 
 * [CWE-477 Use of Obsolete Function](https://cwe.mitre.org/data/definitions/477.html)
 

@@ -2,11 +2,11 @@
 
 
 
-## 배경. 
+## 배경 
 
 불충분한 접근 제어는 OWASP TOP 10에서 1위를 유지하고 있다. 테스트된 모든 애플리케이션에서 불충분한 접근 제어 취약점이 발견되었으며, 주목할 만한 CWE는 *CWE-200: 비인가자에게 민감 정보 노출*, *CWE-201: 전송된 데이터로부터의 민감 정보 노출*, *CWE-918: 서버 측 요청 위조(SSRF)*, 그리고 *CWE-352: 크로스 사이트 요청 위조(CSRF)* 가 있다. 해당 카테고리는 제공받은 데이터 기준 발생 건수가 가장 많았으며, 관련된 CVE 건수는 두 번째로 많았다.
 
-## 점수표.
+## 점수표
 
 
 <table>
@@ -54,7 +54,7 @@
 
 
 
-## 설명. 
+## 설명 
 
 접근 제어는 사용자가 의도된 권한을 벗어나는 행위를 하지 못하도록 정책을 강제한다. 접근 제어 실패는 일반적으로 비인가자 정보 유출, 데이터 수정 및 삭제, 또는 사용자 제한사항에 벗어나는 비즈니스 기능을 수행으로 이어질 수 있다. 흔히 발견되는 불충분한 접근 제어 취약점 목록은 다음과 같다.
 
@@ -68,7 +68,7 @@
 * 강제 브라우징(URL 추측)을 통해 인증이 필요한 페이지에 인증 없이 접근하거나, 일반 사용자가 권한이 필요한 페이지에 접근할 경우.
 
 
-## 대응 방안. 
+## 대응 방안 
 
 접근 제어는 공격자가 접근 제어 검사나 메타데이터를 변조할 수 없는 곳에서 신뢰할 수 있는 서버 측 코드나 서버리스 API들로 수행될 때 실효성이 있다. 
 
@@ -86,7 +86,7 @@
 
 개발자와 QA 담당자는 단위 및 통합 테스트에서 접근 제어를 포함해야 한다.
 
-## 공격 시나리오 예시. 
+## 공격 시나리오 예시 
 
 **시나리오 1:** 이 애플리케이션은 계정 정보에 접근하는 SQL 요청에서 검증되지 않은 데이터를 사용한다.
 
@@ -126,7 +126,7 @@ $ curl https://example.com/app/admin_getappInfo
 
 
 
-## 참조.
+## 참조
 
 * [OWASP Proactive Controls: C1: Implement Access Control](https://top10proactive.owasp.org/archive/2024/the-top-10/c1-accesscontrol/)
 * [OWASP Application Security Verification Standard: V8 Authorization](https://github.com/OWASP/ASVS/blob/master/5.0/en/0x17-V8-Authorization.md)
@@ -136,7 +136,7 @@ $ curl https://example.com/app/admin_getappInfo
 * [OAuth: Revoking Access](https://www.oauth.com/oauth2-servers/listing-authorizations/revoking-access/)
 
 
-## 해당되는 CWE 목록.
+## 해당되는 CWE 목록
 
 * [CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')](https://cwe.mitre.org/data/definitions/22.html)
 

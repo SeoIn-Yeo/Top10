@@ -1,10 +1,10 @@
 # A05:2025 인젝션 ![icon](../assets/TOP_10_Icons_Final_Injection.png){: style="height:80px;width:80px" align="right"}
 
-## 배경. 
+## 배경 
 
 인젝션은 3위에서 5위로 두 단계 하락했으며, A04:2025-암호 실패 및 A06:2025-안전하지 않은 설계 대비 상대적 위치는 변동이 없다. 인젝션은 가장 많이 테스트 된 카테고리 중 하나로, 조사된 모든 애플리케이션에서 테스트 되었다. 인젝션은 다른 카테고리보다 가장 많은 수의 CVE를 보유했으며, 총 37개의 CWE가 포함되었다. 이 카테고리에는 총 3만 개가 넘는 CVE가 보고된 크로스 사이트 스크립팅(높은 빈도/낮은 영향)과 1만 4천 개가 넘는 CVE가 보고된 SQL 인젝션(낮은 빈도/높은 영향)이 포함되었다. CWE-79 웹 페이지 생성 중 입력값의 부적절한 중립화('크로스 사이트 스크립팅')에 대한 보고된 CVE 수가 매우 많아 이 카테고리의 평균 가중 영향도가 낮아졌다.
 
-## 점수표.
+## 점수표
 
 
 <table>
@@ -52,7 +52,7 @@
 
 
 
-## 설명. 
+## 설명 
 
 인젝션 취약점은 신뢰할 수 없는 사용자 입력이 인터프리터(예: 브라우저, 데이터베이스, 커맨드 라인)로 전송되어 인터프리터가 해당 입력의 일부를 명령으로 실행하도록 허용하는 애플리케이션 결함이다.
 
@@ -68,7 +68,7 @@
 한편 LLM 환경에서도 유사한 계열의 인젝션 취약점이 흔해지고 있다. 이는 [OWASP LLM Top 10](https://genai.owasp.org/llm-top-10/)에서 별도로 다룬다. 특히 [LLM01:2025 프롬프트 인젝션](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) 항목에서 관련 내용을 확인할 수 있다.
 
 
-## 대응 방안. 
+## 대응 방안 
 
 인젝션 공격을 예방하는 최선의 방법은 데이터를 명령 및 쿼리로부터 분리하여 유지하는 것이다.
 
@@ -83,7 +83,7 @@
 
 **경고** 위 방법들은 문자열을 파싱하고 이스케이프하는 복잡한 처리를 전제로 하며, 구현 실수가 발생하기 쉽고 시스템 내부 동작이 조금만 바뀌어도 방어가 쉽게 무력화될 수 있다.
 
-## 공격 시나리오 예시.
+## 공격 시나리오 예시
 
 **시나리오 1:** 애플리케이션이 신뢰할 수 없는 데이터를 사용하여 다음과 같은 취약 방식으로 SQL을 호출한다.
 
@@ -116,7 +116,7 @@ Runtime.getRuntime().exec(cmd);
 
 공격자는 `example.com; cat /etc/passwd`를 입력하여 서버에서 임의의 명령을 실행한다.
 
-## 참조.
+## 참조
 
 * [OWASP Proactive Controls: Secure Database Access](https://owasp.org/www-project-proactive-controls/v3/en/c3-secure-database)
 * [OWASP ASVS: V5 Input Validation and Encoding](https://owasp.org/www-project-application-security-verification-standard)
@@ -131,7 +131,7 @@ Runtime.getRuntime().exec(cmd);
 
 
 
-## 해당되는 CWE 목록.
+## 해당되는 CWE 목록
 
 * [CWE-20 Improper Input Validation](https://cwe.mitre.org/data/definitions/20.html)
 
