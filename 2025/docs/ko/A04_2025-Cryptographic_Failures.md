@@ -58,7 +58,7 @@
 
 ## 설명
 
-일반적으로, [전송 계층](https://en.wikipedia.org/wiki/Transport_layer)([OSI 4계층](https://en.wikipedia.org/wiki/OSI_model)) 에서의 모든 데이터는 암호화되어 전송해야 한다. 과거에는 CPU 성능과 프라이빗 키/인증서 관리가 장벽이었다. 현재는 암호 연산 가속을 위한 CPU 전용 명령어(예: [AES support](https://en.wikipedia.org/wiki/AES_instruction_set)) 가 도입되었고, [LetsEncrypt.org](https://letsencrypt.org/) 같은 서비스와 대형 클라우드 공급업체가 자사 플랫폼에 긴밀히 통합된 인증서 관리 서비스를 제공하면서 프라이빗 키와 인증서 관리도 간소화되었다.
+일반적으로, [전송 계층](https://en.wikipedia.org/wiki/Transport_layer) ([OSI 4계층](https://en.wikipedia.org/wiki/OSI_model))에서의 모든 데이터는 암호화되어 전송해야 한다. 과거에는 CPU 성능과 프라이빗 키/인증서 관리가 장벽이었다. 현재는 암호 연산 가속을 위한 CPU 전용 명령어(예: [AES support](https://en.wikipedia.org/wiki/AES_instruction_set))가 도입되었고, [LetsEncrypt.org](https://letsencrypt.org/) 같은 서비스와 대형 클라우드 공급업체가 자사 플랫폼에 긴밀히 통합된 인증서 관리 서비스를 제공하면서 프라이빗 키와 인증서 관리도 간소화되었다.
 
 전송 계층 보안 외에도 어떤 데이터가 저장 시 암호화가 필요한지, 그리고 전송 중([애플리케이션 계층](https://en.wikipedia.org/wiki/Application_layer), OSI 7계층)에 추가적인 암호화가 필요한지 결정하는 것이 중요하다. 예를 들어 패스워드, 신용카드 번호, 건강 기록, 개인 정보, 비즈니스 기밀은 추가 보호가 필요하다. 특히 해당 데이터가 개인정보 보호법(예: EU의 GDPR)이나 규정(예: PCI-DSS)의 적용을 받는 경우 더욱 중요하다. 이러한 모든 데이터에 대해 다음을 확인해야 한다.
 
@@ -88,7 +88,7 @@
 * 애플리케이션이 처리, 저장, 전송하는 데이터를 분류하고 라벨링한다. 개인정보 보호법, 규제 요구사항, 비즈니스 필요에 따라 어떤 데이터가 민감한지 식별한다.
 * 가장 민감한 키는 하드웨어 또는 클라우드 기반 HSM(하드웨어 보안 모듈)에 보관한다.
 * 암호 알고리즘은 가능하면 신뢰할 수 있는 구현체(라이브러리)를 사용한다.
-* 불필요한 민감 데이터는 저장하지 않는다. 저장할 시 가능한 한 빨리 폐기하거나 PCI DSS 준수 토큰화(PCI DSS compliant tokenization) 또는 마스킹(truncation)을 적용한다. 저장하지 않은 데이터는 탈취될 수 없다.
+* 불필요한 민감 데이터는 저장하지 않는다. 저장 시 가능한 한 빨리 폐기하거나 PCI DSS 준수 토큰화(PCI DSS compliant tokenization) 또는 마스킹(truncation)을 적용한다. 저장하지 않은 데이터는 탈취될 수 없다.
 * 저장된 모든 민감 데이터가 암호화되었는지 확인한다.
 * 최신의 강력한 표준 알고리즘, 프로토콜, 키가 적용되어 있는지 확인하고, 적절한 키 관리를 수행한다.
 * 전송 중인 모든 데이터는 TLS 1.2 이상의 프로토콜로만 암호화하고, 전방향 비밀성(Forward Secrecy) 암호를 사용하며, CBC(Cipher Block Chaining) 암호에 대한 지원을 중단하고, 양자 내성 키 교환 알고리즘을 지원한다. HTTPS는 HSTS(HTTP Strict Transport Security)를 사용해 강제한다. 도구를 활용해 모든 항목을 검사한다.
