@@ -95,7 +95,7 @@
 * 민감 데이터가 포함된 응답의 캐싱을 비활성화한다. 이는 콘텐츠 전송 네트워크(CDN), 웹 서버, 모든 애플리케이션 캐싱(예: Redis)을 포함한다. 
 * 데이터 분류에 따라 필요한 보안 통제를 적용한다.
 * FTP 나 STARTTLS 같은 암호화되지 않는 프로토콜을 사용하지 않는다. SMTP로 기밀 정보를 전송하는 것은 피한다.
-* 패스워드는 작업 인자(delay factor)를 갖춘 강력한 적응형 솔트 해싱 함수를 사용해 저장한다. Argon2, yescrypt, scrypt, PBKDF2-HMAC-SHA-512 등이 있다. 레거시 시스템에서 bcrypt를 사용하는 경우 [OWASP Cheat Sheet: Password Storage](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)를 참고한다.
+* 패스워드는 작업 요소(지연 요소)를 갖춘 강력한 적응형 솔트 해싱 함수를 사용해 저장한다. Argon2, yescrypt, scrypt, PBKDF2-HMAC-SHA-512 등이 있다. 레거시 시스템에서 bcrypt를 사용하는 경우 [OWASP Cheat Sheet: Password Storage](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)를 참고한다.
 * 초기화 벡터(IV)는 운영 모드에 적합하게 선택해야 한다. 이는 CSPRNG(Cryptographically Secure Pseudo Random Number Generator) 사용을 의미할 수 있다. 논스(nonce)를 요구하는 모드의 경우 IV에 CSPRNG가 필요하지 않다. 모든 경우에 IV는 고정 키에 대해 두 번 사용해서는 안 된다.
 * 기본 암호화 대신 항상 인증 암호화(Authenticated Encryption)를 사용한다.
 * 키는 암호학적으로 무작위로 생성하고, 메모리에 바이트 배열로 저장해야 한다. 패스워드를 암호키로 사용하는 경우 적절한 패스워드 기반 키 파생 함수(PBKDF)를 통해 키로 변환해야 한다.
